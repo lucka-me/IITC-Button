@@ -91,23 +91,19 @@ object {
  * section
  */
 .section {
-  display: block;
-  position: absolute;
-  top: 0;
-  margin-left: 100vw;
-  transition: margin-left 0.15s ease-in-out;
+  display: none;
   width: 100vw;
 }
 .section.main-menu {
-  margin-left: -100vw;
+  display: none;
 }
 body#main-menu .section.main-menu {
-  margin-left: 0;
+  display: block;
   z-index: 1;
 }
 body#options .section.options,
 body#plugins .section.plugins {
-  margin-left: 0;
+  display: block;
 }
 
 :root {

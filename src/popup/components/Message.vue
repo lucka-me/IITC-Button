@@ -33,9 +33,11 @@ export default {
 <style scoped>
 .message {
   background: #333;
+  display: none;
   position: absolute;
-  bottom: -35px;
-  width: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
   height: 35px;
   line-height: 35px;
   padding: 0 10px 0 10px;
@@ -55,6 +57,6 @@ export default {
   background: linear-gradient(to right, #3333, #333 100%);
 }
 .message.opened {
-  bottom: 0;
+  display: block;
 }
 </style>
